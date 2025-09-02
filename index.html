@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIT Resource Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>BIT Resource Hub</header>
+  <nav id="breadcrumb">Home</nav>
+
+  <!-- Homepage -->
+  <div id="main" class="container">
+    <div class="card" onclick="openYear(1)">Year 1</div>
+    <div class="card" onclick="openYear(2)">Year 2</div>
+    <div class="card" onclick="openYear(3)">Year 3</div>
+    <div class="card" onclick="openYear(4)">Year 4</div>
+  </div>
+
+  <!-- Year & Semester container -->
+  <div id="year" class="hidden">
+    <div class="container" id="semesters"></div>
+  </div>
+
+  <!-- Subjects container -->
+  <div id="semester" class="hidden">
+    <div class="container" id="subjects"></div>
+  </div>
+
+  <!-- Modules container -->
+  <div id="subject" class="hidden">
+    <div id="modules" style="padding:2rem;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
